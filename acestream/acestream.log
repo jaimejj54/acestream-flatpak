@@ -1,0 +1,84 @@
+2024-07-19 12:36:46,753|MainThread|acestream|init segmenter done: log_path=/home/jaime/.ACEStream/logs/segmenter.log
+2024-07-19 12:36:46,753|MainThread|acestream|Start Ace Stream 3.2.3
+2024-07-19 12:36:46,753|MainThread|acestream|platform=linux
+2024-07-19 12:36:46,753|MainThread|acestream|app=acestream
+2024-07-19 12:36:46,753|MainThread|acestream|version=3.2.3 code=3020300 revision=be4471a date=2024-04-22
+2024-07-19 12:36:46,753|MainThread|acestream|use_local_db=True
+2024-07-19 12:36:46,754|MainThread|acestream|is_gui_mode=1
+2024-07-19 12:36:46,754|MainThread|acestream|user_agent=Mozilla/5.0 (Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36 AceStream/3.2.3
+2024-07-19 12:36:46,754|MainThread|acestream|python_version=3.10.14-final-0
+2024-07-19 12:36:46,754|MainThread|acestream|enable debug: 0
+2024-07-19 12:36:46,754|MainThread|acestream|set debug level: 0
+2024-07-19 12:36:46,758|MainThread|acestream.coreapp|pid=40911
+2024-07-19 12:36:46,758|MainThread|acestream.coreapp|process monitor initialized
+2024-07-19 12:36:46,759|MainThread|acestream|get_default_api_version: 2
+2024-07-19 12:36:46,759|MainThread|acestream.coreapp|use fixed i2i_port: 62062
+2024-07-19 12:36:46,759|MainThread|acestream.coreapp|state_dir='/home/jaime/.ACEStream'
+2024-07-19 12:36:46,876|MainThread|acestream.coreapp|set_debug_from_ui: level=0
+2024-07-19 12:36:46,876|MainThread|acestream.coreapp|set_debug_from_ui: log_file_max_bytes=10485760
+2024-07-19 12:36:46,876|MainThread|acestream.coreapp|set_debug_from_ui: log_file_backup_count=1
+2024-07-19 12:36:46,876|MainThread|acestream|enable debug: 0
+2024-07-19 12:36:46,877|MainThread|acestream|set debug level: 0
+2024-07-19 12:36:46,906|MainThread|acestream.SocketHandler.InterruptSocket|bound on 127.0.0.1:37781
+2024-07-19 12:36:46,907|MainThread|acestream.SocketHandler.SocketHandler|bind: socket bound: host=0.0.0.0 port=8621
+2024-07-19 12:36:46,907|MainThread|acestream.LM|listen on 8621
+2024-07-19 12:36:46,934|MainThread|acestream.LM|error in resume_download: filename=/home/jaime/.ACEStream/dlcheckpoints/239b5234652bf5bc0d3a89a0a792cdd8916b15b9.pickle error=FileFormatError('info pieces is not multiple of 20 bytes')
+2024-07-19 12:36:46,941|MainThread|acestream.httpserver|start: addr= port=6878 allow_remote=0 allow_intranet=1
+2024-07-19 12:36:48,265|MainThread|acestream.httpserver|start: bound on ('0.0.0.0', 6878)
+2024-07-19 12:36:48,363|MainThread|acestream.lang|setting up languages: default=en_EN.lang system=es_ES
+2024-07-19 12:36:48,369|MainThread|acestream.SocketHandler.InterruptSocket|bound on 127.0.0.1:50697
+2024-07-19 12:36:48,370|MainThread|acestream.SocketHandler.SocketHandler|bind: socket bound: host=0.0.0.0 port=62062
+2024-07-19 12:36:48,370|Instance2InstanceThread-31|acestream.APIServer|run: ready to receive remote commands on 62062
+2024-07-19 12:36:48,371|PlaylistTaskManagerThread-32 (_run)|acestream.TaskManager|started
+2024-07-19 12:36:48,372|MainThread|acestream.gtk_app|init: icon_path=/home/jaime/Descargas/acestream_3.2.3_ubuntu_22.04_x86_64_py3.10/data/images/acestream16.png
+2024-07-19 12:36:54,940|Thread-19 (__forward)|acestream.upnp|Unable to create Port Forward. Error: Success: <class 'Exception'>:Success
+2024-07-19 12:39:18,038|AceStreamCoreThread|acestream.VOD|failed to init mediainfo: <class 'OSError'>:libmediainfo.so.0: no se puede abrir el fichero del objeto compartido: No existe el fichero o el directorio
+2024-07-19 12:40:31,823|MainThread|acestream.gtk_app|error in MainLoop()
+Traceback (most recent call last):
+  File "ACEStream/Main/AppWrapperGtk.py", line 138, in MainLoop
+  File "/home/jaime/.local/lib/python3.10/site-packages/gi/overrides/Gtk.py", line 1692, in main
+    with register_sigint_fallback(Gtk.main_quit):
+  File "/usr/lib64/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/jaime/.local/lib/python3.10/site-packages/gi/_ossighelper.py", line 237, in register_sigint_fallback
+    signal.default_int_handler(signal.SIGINT, None)
+KeyboardInterrupt
+2024-07-19 12:40:31,835|MainThread|acestream.coreapp|_exit_shutdown: session_port=-1 force=False
+2024-07-19 12:40:31,846|MainThread|acestream.TaskManager|shutdown: force=False
+2024-07-19 12:40:31,847|PlaylistTaskManagerThread-32 (_run)|acestream.TaskManager|stopped
+2024-07-19 12:40:33,851|MainThread|acestream.coreapp|_exit_shutdown: session_port=-1 force=False
+2024-07-19 12:45:42,666|MainThread|acestream|init segmenter done: log_path=/home/jaime/.ACEStream/logs/segmenter.log
+2024-07-19 12:45:42,667|MainThread|acestream|Start Ace Stream 3.2.3
+2024-07-19 12:45:42,667|MainThread|acestream|platform=linux
+2024-07-19 12:45:42,667|MainThread|acestream|app=acestream
+2024-07-19 12:45:42,667|MainThread|acestream|version=3.2.3 code=3020300 revision=be4471a date=2024-04-22
+2024-07-19 12:45:42,667|MainThread|acestream|use_local_db=True
+2024-07-19 12:45:42,667|MainThread|acestream|is_gui_mode=1
+2024-07-19 12:45:42,667|MainThread|acestream|user_agent=Mozilla/5.0 (Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36 AceStream/3.2.3
+2024-07-19 12:45:42,667|MainThread|acestream|python_version=3.10.14-final-0
+2024-07-19 12:45:42,667|MainThread|acestream|enable debug: 0
+2024-07-19 12:45:42,667|MainThread|acestream|set debug level: 0
+2024-07-19 12:45:42,669|MainThread|acestream.coreapp|pid=42457
+2024-07-19 12:45:42,670|MainThread|acestream.coreapp|process monitor initialized
+2024-07-19 12:45:42,670|MainThread|acestream|get_default_api_version: 2
+2024-07-19 12:45:42,670|MainThread|acestream.coreapp|use fixed i2i_port: 62062
+2024-07-19 12:45:42,670|MainThread|acestream.coreapp|state_dir='/home/jaime/.ACEStream'
+2024-07-19 12:45:42,780|MainThread|acestream.coreapp|set_debug_from_ui: level=0
+2024-07-19 12:45:42,781|MainThread|acestream.coreapp|set_debug_from_ui: log_file_max_bytes=10485760
+2024-07-19 12:45:42,781|MainThread|acestream.coreapp|set_debug_from_ui: log_file_backup_count=1
+2024-07-19 12:45:42,781|MainThread|acestream|enable debug: 0
+2024-07-19 12:45:42,781|MainThread|acestream|set debug level: 0
+2024-07-19 12:45:42,800|MainThread|acestream.SocketHandler.InterruptSocket|bound on 127.0.0.1:49134
+2024-07-19 12:45:42,800|MainThread|acestream.SocketHandler.SocketHandler|bind: socket bound: host=0.0.0.0 port=8621
+2024-07-19 12:45:42,800|MainThread|acestream.LM|listen on 8621
+2024-07-19 12:45:42,827|MainThread|acestream.httpserver|start: addr= port=6878 allow_remote=0 allow_intranet=1
+2024-07-19 12:45:44,014|MainThread|acestream.httpserver|start: bound on ('0.0.0.0', 6878)
+2024-07-19 12:45:44,109|MainThread|acestream.lang|setting up languages: default=en_EN.lang system=es_ES
+2024-07-19 12:45:44,118|MainThread|acestream.SocketHandler.InterruptSocket|bound on 127.0.0.1:59080
+2024-07-19 12:45:44,118|MainThread|acestream.SocketHandler.SocketHandler|bind: socket bound: host=0.0.0.0 port=62062
+2024-07-19 12:45:44,118|Instance2InstanceThread-38|acestream.APIServer|run: ready to receive remote commands on 62062
+2024-07-19 12:45:44,119|PlaylistTaskManagerThread-39 (_run)|acestream.TaskManager|started
+2024-07-19 12:45:44,120|MainThread|acestream.gtk_app|init: icon_path=/home/jaime/Descargas/acestream_3.2.3_ubuntu_22.04_x86_64_py3.10/data/images/acestream16.png
+2024-07-19 12:45:50,830|Thread-19 (__forward)|acestream.upnp|Unable to create Port Forward. Error: Success: <class 'Exception'>:Success
+2024-07-19 12:59:23,332|Thread-385 (process_request_thread)|acestream.live.download.b7422cf1e66031042c514980d082546a59161844|set_max_connections: deprecated
+2024-07-19 12:59:23,333|Thread-385 (process_request_thread)|acestream.live.download.b7422cf1e66031042c514980d082546a59161844|set_max_upload_slots: deprecated
