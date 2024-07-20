@@ -4,4 +4,6 @@ apsw
 psutil
 pynacl
 iso8601
+tomli
+expandvars
 aiohttp
