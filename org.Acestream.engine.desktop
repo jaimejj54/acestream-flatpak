@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Acestream
+GenericName=Acestream
+Exec=acestream.engine
+Icon=org.Acestream.engine
+Terminal=false
+Type=Application
+Categories=Network;GTK;
+X-Flatpak-Tags=proprietary;
+X-Flatpak=org.Acestream.engine

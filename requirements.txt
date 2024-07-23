@@ -1,0 +1,12 @@
+pycryptodome
+lxml
+apsw
+psutil
+pynacl
+iso8601
+tomli
+expandvars
+aiohttp
+meson-python
+pycairo
+PyGObject==3.46.0

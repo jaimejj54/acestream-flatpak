@@ -1,0 +1,52 @@
+id: org.Acestream.engine
+runtime: org.freedesktop.Platform
+runtime-version: '22.08'
+sdk: org.freedesktop.Sdk
+command: acestream.engine
+finish-args:
+  - --socket=x11
+  - --socket=wayland
+  - --share=ipc
+  - --share=network
+  - --filesystem=home/.ACEStream
+  - --talk-name=org.kde.StatusNotifierWatcher
+modules:
+  - python3-requirements.json
+  - name: acestream.engine
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 start_engine.sh /app/bin/acestream.engine
+      - mkdir /app/bin/acestream/
+      - cp * -r /app/bin/acestream/
+      - chmod +w -R /app/bin/acestream/ 
+    sources:
+      - type: script
+        dest-filename: start_engine.sh
+        commands:
+          - cd /app/bin/acestream
+          - ./start-engine --client-gtk --log-stdout --log-file /dev/null
+      - type: dir
+        path: acestream
+  - name: icons
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/icons/
+      - cp * -r /app/share/icons/
+    sources:
+      - type: dir
+        path: icons
+  - name: desktop
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/applications/
+      - cp org.Acestream.engine.desktop /app/share/applications/
+    sources:
+      - type: file
+        path: org.Acestream.engine.desktop
+  - shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json
+  
+build-options:
+  build-args: 
+    --share=network
+  env:
+    FLATPAK_ENABLE_NETWORK: 'yes'
