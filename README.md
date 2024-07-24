@@ -1,7 +1,7 @@
 # Acestream Flatpak
 It's just the program you can downlaod from the official web site and packaged into a flatpak.
 
-To build the flatpak colen the repo and build it with the command:
+To build the flatpak clone the repo and build it with the command:
 ```
 git clone https://github.com/jaimejj54/acestream-flatpak.git
 cd acestream-flatpak
