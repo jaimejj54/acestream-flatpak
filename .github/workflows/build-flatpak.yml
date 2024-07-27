@@ -19,9 +19,10 @@ jobs:
       run: |
         sudo flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
         sudo flatpak build-bundle repo acestream-engine.flatpak org.Acestream.engine
+        ls -a
     - name: Use the Upload Artifact GitHub Action
       uses: actions/upload-artifact@v4
       with: 
         name: org.Acestream.engine.flatpak
-        path: org.Acestream.engine.flatpak
+        path: acestream-engine.flatpak
       
