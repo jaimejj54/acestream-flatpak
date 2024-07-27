@@ -17,8 +17,8 @@ jobs:
         sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     - name: "Build flatpak"
       run: |
-        flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
-        flatpak build-bundle repo acestream-engine.flatpak org.Acestream.engine
+        sudo flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
+        sudo flatpak build-bundle repo acestream-engine.flatpak org.Acestream.engine
     - name: Use the Upload Artifact GitHub Action
       uses: actions/upload-artifact@v4
       with: 
