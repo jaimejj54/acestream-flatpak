@@ -25,5 +25,5 @@ jobs:
       uses: csexton/release-asset-action@v3
       with:
          file: acestream-engine.flatpak
-         github-token: ${{ secrets.GITHUB_TOKEN }}
+         github-token: ${{ secrets.TOKEN }}
       
