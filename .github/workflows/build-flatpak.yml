@@ -14,7 +14,7 @@ jobs:
     - name: "Install flatpak-builder"
       run: |
         sudo apt install flatpak-builder -y
-        flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+        sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     - name: "Build flatpak"
       run: |
         flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
