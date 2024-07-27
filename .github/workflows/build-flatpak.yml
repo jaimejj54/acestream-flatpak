@@ -1,7 +1,6 @@
 on:
-  push:
-    tags:
-      - 'v*'
+  release:
+    types: [created]
 
 name: CI
 jobs:
@@ -26,4 +25,3 @@ jobs:
       with:
          file: acestream-engine.flatpak
          github-token: ${{ secrets.TOKEN }}
-      
