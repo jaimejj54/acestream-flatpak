@@ -1,7 +1,8 @@
 on:
   push:
-    branches: [master]
-  pull_request:
+    tags:
+      - 'v*'
+
 name: CI
 jobs:
   flatpak:
@@ -20,9 +21,9 @@ jobs:
         sudo flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
         sudo flatpak build-bundle repo acestream-engine.flatpak org.Acestream.engine
         ls -a
-    - name: Use the Upload Artifact GitHub Action
-      uses: actions/upload-artifact@v4
-      with: 
-        name: org.Acestream.engine.flatpak
-        path: acestream-engine.flatpak
+    - name: Upload Assets to Release
+      uses: csexton/release-asset-action@v3
+      with:
+         file: acestream-engine.flatpak
+         github-token: ${{ secrets.GITHUB_TOKEN }}
       
