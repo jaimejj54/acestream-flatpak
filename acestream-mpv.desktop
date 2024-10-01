@@ -1,0 +1,13 @@
+[Desktop Entry]
+
+Version=1.0
+Name=ACE Mpv
+GenericName=MPV for Acestream
+Comment=Read, capture, broadcast your multimedia streams
+Icon=mpv
+Exec=/home/jaime/scripts/acestream.sh %u
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+MimeType=x-scheme-handler/acestream;application/x-bittorrent;
+Keywords=mpv;media;player;video;audio;tv;

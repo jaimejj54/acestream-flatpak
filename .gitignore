@@ -1,3 +1,7 @@
 .flatpak-builder/
 builddir/
 repo/
+acestream-engine.flatpak
+flatpak-pip-generator
+acestream/acestream.log
+.vscode/
