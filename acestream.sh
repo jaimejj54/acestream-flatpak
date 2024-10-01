@@ -1,6 +1,6 @@
 #! /bin/bash
 ID=${1:12}
-PORT=43473
+PORT=6878
 
 if !(curl "http://127.0.0.1:$PORT/webui/api/service?method=get_version")
 then
