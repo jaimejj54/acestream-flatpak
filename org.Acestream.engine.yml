@@ -12,6 +12,16 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
 modules:
   - python3-requirements.json
+
+  - name: appindicator-icon-shim
+    buildsystem: simple
+    build-commands:
+      - cc -shared -fPIC appindicator_icon_override.c -o libappindicator_icon_override.so -ldl
+      - install -Dm755 libappindicator_icon_override.so /app/lib/libappindicator_icon_override.so
+    sources:
+      - type: file
+        path: appindicator_icon_override.c
+
   - name: acestream.engine
     buildsystem: simple
     build-commands:
@@ -24,9 +34,20 @@ modules:
         dest-filename: start_engine.sh
         commands:
           - cd /app/bin/acestream
+          - export LD_PRELOAD=/app/lib/libappindicator_icon_override.so
           - ./start-engine --client-gtk --log-stdout --log-file /dev/null
       - type: dir
         path: acestream
+    
+  - name: tray-icon
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/icons/hicolor/symbolic/apps/
+      - cp acestream16.png /app/share/icons/hicolor/symbolic/apps/org.Acestream.engine-symbolic.png
+    sources:
+      - type: file
+        path: acestream/data/images/acestream16.png
+  
   - name: icons
     buildsystem: simple
     build-commands:
@@ -35,6 +56,7 @@ modules:
     sources:
       - type: dir
         path: icons
+
   - name: desktop
     buildsystem: simple
     build-commands:
@@ -43,6 +65,7 @@ modules:
     sources:
       - type: file
         path: org.Acestream.engine.desktop
+  
   - shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json
   
 build-options:
