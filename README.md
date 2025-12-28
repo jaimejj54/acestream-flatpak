@@ -47,9 +47,9 @@ cp mpv.conf ~/.var/app/io.mpv.Mpv/config/mpv/
 
 ## Known issues
 
-- The tray icon is not shown in KDE. In GNOME three dots are displayed (Adawaita theme), but it can be fixed. Enter the extension settings and add an entry in the AppIndicator and KStatusNotifierItem Support. The ID is `acestream-engine`. If you have an icon theme installed there may be a custom icon. For example, the [Tela Icon](https://github.com/vinceliuice/Tela-icon-theme) theme has its own. The icon name is `acestream-tray`. Nevertheless, you can set the path of the image you want to be displayed (`~/acestream-flatpak/acestream/data/images/streamer-32.png`).
+- ~~The tray icon is not shown in KDE. In GNOME three dots are displayed (Adawaita theme), but it can be fixed. Enter the extension settings and add an entry in the AppIndicator and KStatusNotifierItem Support. The ID is `acestream-engine`. If you have an icon theme installed there may be a custom icon. For example, the [Tela Icon](https://github.com/vinceliuice/Tela-icon-theme) theme has its own. The icon name is `acestream-tray`. Nevertheless, you can set the path of the image you want to be displayed (`~/acestream-flatpak/acestream/data/images/acestream16.png`)~~.
 
-- The port used by acestream might be different than mine. You can change it in the script or by clicking the tray icon, in remote access.
+- The port used by acestream might be different than mine. You can change it in the script or by clicking the tray icon -> options -> advanced.
 
 ---
 
