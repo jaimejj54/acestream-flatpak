@@ -7,6 +7,7 @@ To build the flatpak clone the repo and build it with the command:
 ``` bash
 git clone https://github.com/jaimejj54/acestream-flatpak.git
 cd acestream-flatpak
+git submodule update --init --recursive
 flatpak-builder --force-clean --install-deps-from=flathub --repo=repo builddir org.Acestream.engine.yml
 flatpak build-bundle repo acestream-engine.flatpak org.Acestream.engine
 flatpak install --user acestream-engine.flatpak
